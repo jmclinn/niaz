@@ -33,11 +33,11 @@ body{background:#D6F6FF;}
 @media (min-width:750px){.c4h:hover{color:#FFB55E;}}
 	*/
 	/* blues */
-body{background:#EEE;}
-.c1{color:#004D5C;}.bb1{border-bottom:1px solid #004D5C;}.br1{border-right:1px solid #004D5C;}.bl1{border-left:1px solid #004D5C;}
-.c2{color:#3293A6;}.bb2{border-bottom:1px solid #3293A6;}.br2{border-right:1px solid #3293A6;}.bl2{border-left:1px solid #3293A6;}
-.c3{color:#00A8C9;}.bb3{border-bottom:1px solid #00758C;}.br3{border-right:1px solid #00758C;}.bl3{border-left:1px solid #00758C;}
-.c4{color:#00D5FF;}.bb4{border-bottom:1px solid #00D5FF;}.br4{border-right:1px solid #00D5FF;}.bl4{border-left:1px solid #00D5FF;}
+body{background:#EEE;}a{color:#00A8C9;}
+.c1{color:#004D5C;}.bb1{border-bottom:1px solid #004D5C;}.br1{border-right:1px solid #004D5C;}.bl1{border-left:1px solid #004D5C;}.bt1{border-top:1px solid #004D5C;}
+.c2{color:#3293A6;}.bb2{border-bottom:1px solid #3293A6;}.br2{border-right:1px solid #3293A6;}.bl2{border-left:1px solid #3293A6;}.bt2{border-top:1px solid #3293A6;}
+.c3{color:#00A8C9;}.bb3{border-bottom:1px solid #00758C;}.br3{border-right:1px solid #00758C;}.bl3{border-left:1px solid #00758C;}.bt3{border-top:1px solid #00758C;}
+.c4{color:#00D5FF;}.bb4{border-bottom:1px solid #00D5FF;}.br4{border-right:1px solid #00D5FF;}.bl4{border-left:1px solid #00D5FF;}.bt4{border-top:1px solid #00D5FF;}
 @media (min-width:750px){.c4h:hover,a:hover{color:#00D5FF;}}
 /* header */
 #header{margin-bottom:10px;}
@@ -75,3 +75,12 @@ body{background:#EEE;}
 .eventbox{padding:0 0 20px 0;width:95%;margin:0 auto;}
 #pi-pic{width:45%;margin:0 10px 0 0;float:left;}
 .footer{display:block;position:relative;text-align:center;margin:0 auto;padding:20px 0 0 0;line-height:1em;}
+
+/* people */
+.ppl-img{position:relative;float:left;width:22%;height:0;padding-bottom:22%;margin-right:3%;overflow:hidden;}
+.ppl-img img{width:100%;}
+.ppl-info{position:relative;float:left;width:75%;overflow:hidden;}
+.ppl-info h2{padding-bottom:0.5em;text-align:center;}
+.ppl-info p{line-height:1.5em;}
+.ppl-info h3{font-size:1em;padding-top:20px;text-align:center;cursor:pointer;}
+.ppl-info1,.ppl-info2{position:relative;float:left;width:48%;overflow:hidden;}.ppl-info1{margin-right:4%;}

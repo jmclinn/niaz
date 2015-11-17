@@ -61,7 +61,7 @@
 		<div class="section">
 			<h1 class="c1 bb3">
 				About Us
-				<a href=""><span class="c2 c4h seeall">more</span></a>
+				<a href="./people/"><span class="c2 c4h seeall">more</span></a>
 			</h1>
 			<h6 class="c1" style="line-height:1.5em;">About Us section. The 'more' link could send this to the People page. This is filler text for a short blurb about the group and areas of research/interests. It's split in half with the News section, but on mobile, because the width is so much smaller already , it will be width of the page and come before the News section.</h6>
 		</div>
@@ -145,6 +145,33 @@ function research(e){
 		}
 	}
 	document.getElementById('rschimg').setAttribute('src',file+img[research_num]);
+}
+function people(e){
+	var per = e.substr(0,e.length - 2); // remove number tag from name
+	var num = e.substr(e.length - 1); // get number tag
+	if(num == '1' || num == '3'){ tag = '-1'; }
+	else{ tag = '-2'; }
+	var btn = document.getElementById(per+tag); // get button element
+	if(num == '1'){
+		btn.setAttribute("onclick","people('"+per+"-3')"); // switch tag
+		btn.innerHTML = "&#9652; personal bio &#9652;"; // change button text
+		document.getElementById(per+"-bio").style.display = "block"; // switch display on/off
+	}
+	else if(num == '3'){
+		btn.setAttribute("onclick","people('"+per+"-1')");
+		btn.innerHTML = "&#9662; personal bio &#9662;";
+		document.getElementById(per+"-bio").style.display = "none";
+	}
+	else if(num == '2'){
+		btn.setAttribute("onclick","people('"+per+"-4')");
+		btn.innerHTML = "&#9652; project info &#9652;";
+		document.getElementById(per+"-prj").style.display = "block";
+	}
+	else if(num == '4'){
+		btn.setAttribute("onclick","people('"+per+"-2')");
+		btn.innerHTML = "&#9662; project info &#9662;";
+		document.getElementById(per+"-prj").style.display = "none";
+	}
 }
 </script>
 </body>
