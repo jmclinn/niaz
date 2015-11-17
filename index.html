@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Advanced Computational Mechanics and Materials Laboratory | ACML</title>
+	<link rel="stylesheet" type="text/css" href="./static/style.css">
+	<link rel="shortcut icon" href="./static/logos/ur-sm.png">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="header">
+		<h1 id="title" class="c1">Advanced Computational Mechanics and Materials Laboratory</h1>
+		<ul id="menulist" class="c2">
+				<a href="."><li class="br3 c4h">Home
+				</li></a><a href="./research/"><li class="br3 c4h">Research
+				</li></a><a href="./people/"><li class="br3 c4h">People
+				</li></a><a href="./publications/"><li class="br3 c4h">Publications
+				</li></a><a href="./news/"><li class="br3 c4h">News/Events
+				</li></a><a href="./teaching/"><li class="br3 c4h">Teaching
+				</li></a><a href="./contact/"><li class="c4h">Contact
+			</li></a></ul>
+	</div>
+<!-- mobile header start-->
+	<div id="header-sm">
+		<h1 id="title-sm" class="c1">Advanced Computational Mechanics and Materials Laboratory</h1>
+		<img id="menubutton" src="./static/logos/menu.png" onclick="menu()"/>
+		<ul id="menulist-sm" class="c2" style="display:none;">
+			<a href="."><li class="bb3 c4h">Home
+			</li></a><a href="./research/"><li class="bb3 c4h">Research
+			</li></a><a href="./people/"><li class="bb3 c4h">People
+			</li></a><a href="./publications/"><li class="bb3 c4h">Publications
+			</li></a><a href="./news/"><li class="bb3 c4h">News/Events
+			</li></a><a href="./teaching/"><li class="bb3 c4h">Teaching
+			</li></a><a href="./contact/"><li class="c4h">Contact
+		</li></a></ul>
+	</div>
+<!-- mobile header end -->
+
+
+
+
+
+	<div id="boxright">
+		<!-- research box -->
+		<div class="section">
+			<div id="rschbox">
+				<img id="rschimg" src="./static/img/top1.jpg" class="r5" />
+				<div class="arrow-l" onclick="research(0)"></div>
+				<div class="arrow-r" onclick="research(1)"></div>
+			</div>
+			<a href=""><h2 class="c3 c4h" style="text-align:center;line-height:2em;">Title of Research One</h2></a>
+		</div>
+		<!-- end -->
+		<!-- about us box -->
+		<div class="section">
+			<h1 class="c1 bb3">
+				About Us
+				<a href=""><span class="c2 c4h seeall">more</span></a>
+			</h1>
+			<h6 class="c1" style="line-height:1.5em;">About Us section. The 'more' link could send this to the People page. This is filler text for a short blurb about the group and areas of research/interests. It's split in half with the News section, but on mobile, because the width is so much smaller already , it will be width of the page and come before the News section.</h6>
+		</div>
+		<!-- end -->
+		<!-- principal investigator box -->
+		<div class="section">
+			<h1 class="c1 bb3">
+				Research Areas
+				<a href=""><span class="c2 c4h seeall">more</span></a>
+			</h1>
+			<div class="eventbox">
+				<h2 class="c3 bb4 subheading">Research Area One</h2>
+				<p class="c1">You could also choose to separate your basic info about your research into sections, or it could be just left as a block of text like in the About Us section.</p>
+			</div>
+			<div class="eventbox">
+				<h2 class="c3 bb4 subheading">Research Area Two</h2>
+				<p class="c1">You could also choose to separate your basic info about your research into sections, or it could be just left as a block of text like in the About Us section.</p>
+			</div>
+		</div>
+		<!-- end -->
+	</div>
+	<div id="boxleft">
+		<div class="section">
+			<h1 class="c1 bb3">
+				News
+				<a href=""><span class="c2 c4h seeall">more</span></a>
+			</h1>
+			<div class="eventbox">
+				<h2 class="c3 bb4 subheading">Event Title One</h2>
+				<p class="c1">Event information would go here. This could also be a link to a page with more detailed information.</p>
+			</div>
+			<div class="eventbox">
+				<h2 class="c3 bb4 subheading">Event Title Two</h2>
+				<p class="c1">Event information would go here. This could also be a link to a page with more detailed information.</p>
+			</div>
+			<div class="eventbox">
+				<h2 class="c3 bb4 subheading">Event Title Three</h2>
+				<p class="c1">Event information would go here. This could also be a link to a page with more detailed information.</p>
+			</div>
+		</div>
+		<div class="section">
+			<h1 class="c1 bb3">
+				Principal Investigator
+			</h1>
+			
+				<p class="c1"><img id="pi-pic" class="r5" src="./static/img/people/niaz-abdolrahim.jpg" />
+				Your personal info / short bio would go here. This is filler text to get an idea of what it would look like. I cropped the image for the desktop version of the site so it wouldn't be that much longer than the text, but that can easily be changed back. Also, feel free to send me any content as you get it ready and I can put it in as we build the site.
+			
+			</p>
+		</div>
+	</div>
+
+	<div class="section bb3" style="padding:10px 0;"></div>
+	<p class="footer c3">University of Rochester – &copy; 2015</p>
+	<a href="http://www.rochester.edu/" target="_blank"><img class="footer" style="height:80px;margin-bottom:10px;" src="./static/logos/ur-logo-clw.png" />
+
+<script>
+function menu(){
+		document.getElementById('menulist-sm').style.display = "block";
+		document.getElementById('menubutton').style.display = "none";
+}
+window.research_num = 0;
+function research(e){
+	var file = './static/img/';
+	var img = ['top1.jpg','header.jpg'];
+	var num = img.length - 1;
+	if(e == 0){
+		if(research_num != 0){
+			research_num = research_num - 1;
+		}
+		else{
+			research_num = num;
+		}
+	}
+	else{
+		if(research_num != num){
+			research_num = research_num + 1;
+		}
+		else{
+			research_num = 0;
+		}
+	}
+	document.getElementById('rschimg').setAttribute('src',file+img[research_num]);
+}
+</script>
+</body>
+</html>
